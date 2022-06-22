@@ -24,6 +24,7 @@ controller.getAdoption = (req, res) =>
                     format.success = false;
                     res.status(400);
                     res.json(format);
+                    
                 }
                 else
                 {
