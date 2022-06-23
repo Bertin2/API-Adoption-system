@@ -161,9 +161,6 @@ controller.putPet = (req, res) =>
                         res.json(format);
                     }
                     
-                }
-            })
-        }
     })
 }
 
