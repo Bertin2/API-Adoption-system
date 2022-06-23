@@ -79,7 +79,7 @@ controller.getPets = (req, res) =>
     })
 }
 
-controller.postPet = (req, res) =>
+controller.postPet = (req, res) =>//post
 {
     const sql = "INSERT INTO pets SET ?";
     req.getConnection((error,conn) => {
