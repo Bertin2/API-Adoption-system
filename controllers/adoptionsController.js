@@ -211,7 +211,14 @@ controller.deleteAdoption = (req, res) =>
 {
     const sql = "DELETE from adoptions WHERE id = ?";
     req.getConnection((error,conn) => {
-        
+        if(error)
+        {
+            format.code = 500;
+            format.message = "Error to connect to DB, please contact to admin";
+            format.success = false;
+            res.status(500);
+            res.json(format);
+		
         }
         else
         {
