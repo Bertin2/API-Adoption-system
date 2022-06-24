@@ -4,7 +4,8 @@ const res = require("express/lib/response");
 const jwt = require("jsonwebtoken");
 const db = require("../database").config;
 
-controller.getLogin = (req,res) => {
+controller.getLogin = (req,res) => //Get
+ {
     const user ={
         id: req.body.id,
         time: new Date().getTime()
